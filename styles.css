@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5d51e2;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 700px;
+    margin: 50px;
+    background-color: #f6faff;
+    border-radius: 20px;
+    padding: 4%;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px auto 100px 100px;
+    grid-template-areas: 
+        "t t t t t t t t t t t t"
+        "q q q q q q q q q q q q"
+        ". . . . . . . . . . . a"
+        ". . . . . . . . . . . g";
+}
+
+#title {
+    grid-area: t;
+    text-align: center;
+    font-size: 50px;
+    color: #5d51e2;
+    margin: 10px;
+}
+
+#quote {
+    width: 600px;
+    height: 120px;
+    grid-area: q;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#author {
+    width: 130px;
+    grid-area: a;
+    text-align: right;
+    font-size: 18px;
+    margin: 20px;
+    color: #5d51e2;
+}
+
+#generate {
+    grid-area: g;
+    width: 150px;
+    height: 75px;
+    border: none;
+    border-radius: 15px;
+    background-color: #5d51e2;
+    color: #f6faff;
+    font-size: 18px;
+    text-align: center;
+}
